@@ -13,13 +13,13 @@ from bs4 import BeautifulSoup
 #FLASK CONFIG
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "SECRET" #os.getenv("FLASK_SECRET_KEY")
+app.config['SECRET_KEY'] = os.getenv("FLASK_SECRET_KEY")
 Bootstrap(app)
 
 #EMAIL
 
-MY_EMAIL = "leoworkcode@gmail.com"
-MY_PASSWORD = "rfycgaqtakopitvx"
+MY_EMAIL = os.getenv("MAIL")
+MY_PASSWORD = os.getenv("PW")
 
 #DATA
 
