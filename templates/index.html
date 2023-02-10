@@ -1,0 +1,364 @@
+{% include "header.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+
+
+
+<body>
+
+    <section class="white-section" id="Name" style="padding-top: 0%;">
+
+            <!-- Nav Bar -->
+
+            <nav class="navbar fixed-top navbar-expand-lg bg-primary navbar-light py-3 " >
+
+                <a href="{{url_for('entrance')}}" class="navbar-brand"><span class="fa-solid fa-code fa-2xl" style="color: black;"></span></a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse ms-auto" id="navbarCollapse">
+
+                    <div class="navbar-nav ms-auto py-0">
+
+                        <a href="#About" class="nav-item nav-link"> About me</a>
+
+                        <a href="#Experience-section" class="nav-item nav-link">Experience</a>
+
+                        <a href="#Work" class="nav-item nav-link">Work</a>
+
+                        <a href="#Contact" class="nav-item nav-link">Contact</a> 
+
+                    </div>
+
+                    <a href="" class="btn btn-dark ml-3">Resume</a>
+               </div>
+            </nav>
+
+
+            <!-- Title -->
+
+            <div class="container-fluid d-flex align-items-center pb-5" style="min-height: 100vh;">
+
+                <div class="container-fluid col-lg-12">
+                    <div class="row">
+
+                        <div class="text-center">
+
+                            <div class="landing-words ">
+
+                                <h1 class="big-name mb-2 title-color"><a>I</a><a>'</a><a>m</a> <a>L</a><a>e</a><a>o</a></h1>
+                                <h2 class="big-name highlight-color mb-4">a Python Developer.</h2>
+
+                             </div>
+
+                         </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+    
+    <section class="white-section" id="About">
+        <div class="container-fluid d-flex py-5" style="min-height: 80vh;">
+
+            <div class="container">
+                <div class="">
+                    <div class="text-center">
+
+                            <h1 class="text-center display-5 title title-color mb-4"><a>About me</a></h1>
+
+                        <div class="row align-items-center">
+                            <div class="normal-color information col-lg-6 col-sm-12">
+                            <p>
+                                Hello! My name is Leonardo and I enjoy solving problems using code. 
+                                My interest on it started when I was 14 when an awesome teacher showed me
+                                this weird arcane spells called code.
+                                <span class="br"></span>
+                                Fast foward to today, I've been studying CS in an <a href="https://www.unam.mx/" target="_blank" rel="noopener noreferrer">amazing college</a> for 2 years up to now,
+                                 I got an art & creative background by working on amusing projects. My main focus these 
+                                 days is getting my degree as well as building (and sometimes designing) effective, 
+                                 simple and beautiful to experience solutions for a variety of clients. 
+                                 <span class="br"></span>
+                                I also have a <a href="https://lenny-blog.onrender.com/" target="_blank" rel="noopener noreferrer">tech blog</a> that shares interesting solutions and comments on CS.
+                                <span class="br"></span>
+                                Here are my favorite working technologies:
+                            </p>
+                            <ul>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <li>Python</li>
+                                        <li>JavaScript (ES6+)</li>
+                                        <li>Flask</li>
+                                    </div>
+                                    <div class="col-6">
+                                        <li>Node.js</li>
+                                        <li>PostgreSQL</li>
+                                        <li>React</li>
+                                    </div>
+                                  </div>
+                            </ul>
+                        </div>
+
+                            <img class="profile-pic col-lg-6 col-sm-12" src="static/img/profile.png" alt="">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="white-section" id="Experience-section">
+        <div class="container-fluid d-flex py-5" style="min-height: 30vh;">
+
+            <div class="container">
+                <div class="text-center">
+
+                    <h1 class="display-5 title-color title mb-5"><a>Where I've been</a></h1>
+                    <div class="text-center">
+                        <div class="mt-5">
+                            <div role="tabpanel">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="list-group list-group-horizontal mb-5" id="myList" role="tablist">
+                                            <a class="list-group-item list-group-item-action active information text-center"data-bs-toggle="list" href="#Experience" role="tab"><strong>Experience</strong></a>
+                                            <a class="list-group-item list-group-item-action information text-center"data-bs-toggle="list" href="#Education" role="tab"> <strong>Education</strong></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade active show information py-3 px-3" id="Experience" role="tabpanel">
+
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-6 col-sm-12">
+                                                        <p class="information mb-2 highlight-color"><strong>Self - Employed</strong></p>
+                                                        <p class="mb-4 text-left normal-color">Python Developer
+                                                            <br> 
+                                                            <small>2020 - Present</small></p>
+                                                    </div>
+                                                    <div class="col-lg-6 col-sm-12">
+                                                        <ul class=" normal-color small-text">
+                                                            <li class="mb-2">Work with a variety of different frameworks, plataforms such as <b>Flask</b>, <b>Selenium</b>, <b>BeautifulSoup</b>, <b>Pandas</b>, <b>Matplotlib</b>, <b>TensorFlow</b>, <b>Gnunicorn</b>.</li>
+                                                            <li class="mb-2">Write <b>simple</b>, <b>effective</b>, <b>maintainable</b> code for a diverse clients and internal projects.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                    
+                                            </div>
+
+                                            <div class="tab-pane fade show information py-3 px-3" id="Education" role="tabpanel">
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-6 col-sm-12">
+                                                        <p class="information mb-2 highlight-color"><strong>Computer Science Degree</strong></p>
+                                                        <p class="mb-4 text-left normal-color">Universidad Nacional Autonoma de mexico 
+                                                            <br> 
+                                                            <small>2020 - Present</small></p>
+                                                    </div>
+                                                    <div class="col-lg-6 col-sm-12">
+                                                        <ul class=" normal-color small-text">
+                                                            <li class="mb-2">Learn to <b>deploy</b> and <b>manage</b> projects.</li>
+                                                            <li class="mb-2">Work with a variety of different languages such as <b>Java</b> & <b>Python</b>.</li>
+                                                            <li class="mb-2">Communicate with multi-disciplinary teams of <b>Computer Scientists</b>, <b>Mathemathicians</b> and <b>Data Scientists</b>.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <span class="br"></span>
+
+                                                <div class="row align-items-center ">
+                                                    <div class="col-lg-6 col-sm-12">
+                                                        <p class="information mb-2 highlight-color"><strong>Associate degree at Informatics </strong></p>
+                                                        <p class="mb-4 text-left normal-color">Colegio Oviedo Schonthal
+                                                            <br> 
+                                                            <small>2017 - 2019</small></p>
+                                                    </div>
+                                                    <div class="col-lg-6 col-sm-12">
+                                                        <ul class="text-left normal-color small-text">
+                                                            <li class="mb-2">Learn the fundamentals of <b>web development</b>.</li>
+                                                            <li class="mb-2">Learn to <b>design</b> and <b>animate</b> in the <b>Corel Family</b>.</li>
+                                                            <li class="mb-2">Learn language <b>batch</b> and <b>shell</b> code.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <span class="br"></span>
+
+                                                <div class="row align-items-center">
+                                                    <div class="col-lg-6 col-sm-12">
+                                                        <p class="information mb-2 highlight-color"><strong>Certificates</strong></p>
+                                                        <p class="mb-4 text-left normal-color">
+                                                            <small>2020 - Present</small></p>
+                                                    </div>
+                                                    <div class="col-lg-6 col-sm-12">
+                                                        <ul class="text-left normal-color small-text" >
+                                                            <li class="mb-2"><b>Python</b> Bootcamp of London App Brewery.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                      
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="white-section" id="Work">
+        <div class="container-fluid d-flex py-3" style="min-height: 30vh;">
+
+            <div class="container">
+                <div class="row justify-content-center">
+
+                        <h1 class="display-5 title-color title text-center mb-5"><a>Some noteworthy projects</a></h1>
+
+                    <div class="row ">
+
+
+                        <!-- Dinamic project searcher -->
+
+                        {% for box in data %}
+
+                        <div class="col-lg-3 col-sm-6 col-md-3">
+                            <a href="https://github.com/leointhecode/{{ box['title'].replace(' ', '-') }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: black;">
+                                <div class="custom-card card">
+                                    <div class="card-body">    
+                                        <div class="row" style="height: calc(250px/3);">
+                                            <p class="information text-center mb-2"><strong>{{ box['title'] }}</strong></p>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="container-fluid">
+                                                <p class="description">{{ box['description'] }}</p>
+                                            </div>
+                                        </div>
+    
+                                        
+                                        <span class="br"></span>
+    
+                                        <div class="row">
+                                            <p class="small-text-card "><small><b> Main language:</b> {{ box['main_language'] }}</small></p>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        {% endfor %}
+
+
+
+
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+   
+
+
+    <section class="white-section" id="Contact">
+        <div class="container-fluid d-flex py-5" style="min-height: 75vh;">
+
+            <div class="container">
+                <div class="row align-items-center">
+
+                        <h1 class="display-5 title title-color mb-4 text-center"><a>Say Hello</a></h1>
+
+                        <p class="information normal-color mb-4">Want to get in touch? I'm looking for new opportunities, <b class="highlight-color">Fill out</b> the form below to send me a message, <b class="highlight-color">I will get back to you</b> as soon as possible!</p>
+
+                        <form class="information" name="sentMessage" id="contactForm" novalidate>
+                            <div class="control-group">
+                              <div class="form-group floating-label-form-group controls">
+                                <b><label>Name</label></b>
+                                <input type="text" class="form-control" placeholder="Your name" name="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                              </div>
+                            </div>
+                            <div class="control-group">
+                              <div class="form-group floating-label-form-group controls">
+                                <b><label>Email Address</label></b>
+                                <input type="email" class="form-control" placeholder="Your email address" name="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                              </div>
+                            </div>
+                            <div class="control-group">
+                            </div>
+                            <div class="control-group">
+                              <div class="form-group floating-label-form-group controls">
+                                <b><label>Idea</label></b>
+                                <textarea rows="5" class="form-control" placeholder="Your Idea!" name="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                              </div>
+                            </div>
+                            <div id="success"></div>
+                            <button type="submit" class="btn btn-contact mt-2" id="sendMessageButton">Send</button>
+                          </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+<!-- The social media icon bar -->
+    <div class="icon-bar">
+        <a href="https://github.com/leointhecode" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-lg"></i></a>
+        <a href="https://www.instagram.com/leointhecode/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/leonardo-espinosa-731a32264/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+        <a href="https://replit.com/@lenny-dot" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-python fa-lg"></i></a>
+
+        
+    </div>
+
+
+    <div class="mail-parent">
+        <div class="icon-bar">
+            <a href="mailto:leointhecode@gmail.com" class="mail">leointhecode@gmail.com</a>       
+        </div>
+    </div>
+    
+ 
+    <footer class="white-section" id="footer">
+
+        <div class="phone-icons">
+            <p>
+                <a href="https://github.com/leointhecode" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-lg"></i></a>
+                <a href="https://www.instagram.com/leointhecode/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/leonardo-espinosa-731a32264/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                <a href="https://replit.com/@lenny-dot" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-python fa-lg"></i></a>
+            </p>
+        </div>
+
+        <p class="section-2-p">Designed & Built by Leonardo Espinosa</p>
+    
+      </footer>
+
+      <i class="fa-solid  fa-angle-down highlight-color scroll-to-bottom fa-bounce"></i>
+
+      <a href="#Name" class="btn px-0 back-to-top"><i class="fa-solid fa-angles-up fa-2xl fa-bounce"></i></a>
+
+        <!-- JavaScript Libraries -->
+
+    
+        <!-- Template Javascript -->
+    <script src="static/js/index.js" charset="utf-8"></script>
+
+</body>

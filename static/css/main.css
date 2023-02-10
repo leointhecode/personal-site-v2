@@ -1,0 +1,369 @@
+h1, h2, h3, body {
+  font-family: 'Montserrat';
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+
+
+
+
+ul {
+  list-style: none; 
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #E8810C; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+
+
+
+.white-section {
+  background-color: #ffffff;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 5%;
+}
+.white-section p a {
+  color: #E8810C;
+  font-weight: 600;
+}
+.profile-pic {
+  scale: 90%;
+  border-radius: 40%;
+  border: 10px solid;
+  border-color: #E8810C;
+  
+}
+
+/* Landing page */
+
+.big-name{
+  font-size: calc(21vw + 1em);
+  font-weight: 600;
+}
+
+#Name .landing-words a:hover{
+  color: #DE5D0B;
+}
+
+#Name h2 {
+  font-size: calc(2vw + 1em);
+}
+
+#Name h3 {
+  font-size: 1.5em;
+}
+
+.small-text-card {
+  font-size: calc( 0.8em + .2vh);
+  position: absolute;
+  bottom: 10px;
+}
+
+.small-text{
+  font-size: 0.8em;
+}
+
+.description {
+  font-size: 15px;
+}
+
+
+.normal-color{
+   color: #4e4d4d;
+  }
+
+.highlight-color{ 
+  color: #E8810C !important; 
+}
+
+.title-color{ 
+  color: #000000; 
+}
+
+.text-left h3 {
+  font-size: 1.6em;
+}
+
+.information{
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 1.4em;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.title {
+  font-size: calc(2vw + 1.5em);
+  font-weight: 700;
+
+}
+
+.title a:hover {
+  color: #E8810C !important;
+}
+
+.shadow-text {
+  font-size: calc(1vw + .2em);
+  font-weight: 600;
+}
+
+
+
+/*  Portfolio section */
+
+
+ /* Nav Bar  */
+
+ .navbar-nav a {
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+
+}
+
+.navbar { 
+  padding-top: 1.5%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.navbar-nav a{
+  color: #000000 !important;
+  font-weight: 600 !important;
+}
+
+.navbar-nav a:hover { 
+  color: #DE5D0B !important; 
+}
+
+
+
+
+
+
+.bg-primary {
+  background-color: #ffffff !important;
+}
+
+.btn-dark:hover {
+  background-color: #E8810C !important;
+  border-color: transparent;
+}
+
+.btn-contact {
+  border-color: #DE5D0B !important;
+  border: 5px solid;
+  border-radius: 12px;
+  color: #DE5D0B;
+  font-weight: 600;
+  font-size: 1em;
+
+}
+.btn-contact:hover, .btn-contact:active {
+  background-color: #DE5D0B;
+  color: #ffffff;
+  font-weight: 600;
+
+}
+
+.btn-outline-portofolio:hover {
+  background-color: #DE5D0B;
+  color: #ffffff;
+}
+
+#myList .active {
+  background-color: #DE5D0B !important;
+  color: #ffffff;
+  border-color: #DE5D0B !important;
+}
+
+/* Scrollbar */
+
+ /* width */
+ ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #8b8b8b;
+  border-radius: 10px;
+} 
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E8810C;
+} 
+
+::-webkit-scrollbar-thumb:active {
+  background: #E8810C;
+} 
+/* SOCIAL BAR */
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 84%;
+  margin-left: 3%;
+  margin-right: 3%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media (max-width: 992px) {
+
+  .icon-bar {
+    display: none;
+  }
+  
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  color: #000000;
+  display: block;
+  text-align: center;
+  margin: 10px 10px 25px 16px;
+  transition: all 0.3s ease;
+  font-size: 1.5em;
+}
+
+.icon-bar a:hover {
+  color: #DE5D0B;
+}
+
+.mail-parent {
+  float: right;
+  margin-right: 8.5%;
+}
+.mail-parent .icon-bar {
+  top:69%;
+}
+
+.mail-parent .icon-bar a {
+  font-size: 1vw;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.mail {
+  position: fixed;
+  writing-mode: vertical-rl;
+  transition: all 0.3s ease;
+  
+}
+
+
+ #footer {
+  text-align: center;
+  padding: 0% 5% 5% 5%;
+}
+
+#footer a {
+  font-size: 1.5em;
+  color: #000000;
+  margin: 5%;
+}
+
+#footer a:hover {
+  color: #DE5D0B;
+}
+
+@media (min-width: 992px) {
+
+  .phone-icons {
+    display: none;
+  }
+  
+}
+
+.br {
+  display: block;
+  margin-bottom: 1em;
+}
+
+
+#Experience-section b{
+  color: #E8810C;
+}
+
+#Experience-section li{
+  position: relative;
+}
+
+.scroll-to-bottom {
+  position: fixed;
+  width: 20px;
+  font-size: 3em;
+  right: 49%;
+  bottom: 9%;
+  z-index: 11;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 30px;
+  right: 6%;
+  bottom: 30px;
+  z-index: 11;
+}
+
+.back-to-top:hover, .back-to-top:active {
+  color: #DE5D0B;
+}
+
+
+.custom-card {
+  border-radius: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card {
+  border-color: #E8810C;
+  margin-bottom: 10%;
+
+}
+
+.custom-card .card-body {
+  padding: 35px;
+  height: 280px;
+}
+
+.custom-card:hover, .custom-card:active{
+  background: #E8810C;
+  color: #fff !important;
+}
+
+.custom-card:hover, .custom-card:active p {
+  color: #fff !important;
+}
+
+.custom-card:hover, .custom-card:active .normal-text p {
+  color: #fff !important;
+}
+
