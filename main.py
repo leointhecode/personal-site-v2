@@ -95,9 +95,6 @@ def entrance():
 
     return render_template('index.html', data=getData())
 
-@app.route("/resume")
-def download():
-    return send_from_directory(directory="static/documents/", path="cv.pdf")
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5050)
