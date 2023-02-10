@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, send_from_directory
 from flask_bootstrap import Bootstrap
 from flask_ckeditor import CKEditor
 import smtplib
@@ -93,10 +93,11 @@ def entrance():
 
             return redirect('/')
 
-            
-
-    
     return render_template('index.html', data=getData())
+
+@app.route("/resume")
+def download():
+    return send_from_directory(directory="static/documents/", path="cv.pdf")
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5050, debug=True)
