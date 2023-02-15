@@ -233,7 +233,7 @@ ul li::before {
   transform: translateY(-50%);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1570px) {
 
   .icon-bar {
     display: none;
@@ -292,7 +292,7 @@ ul li::before {
   color: #DE5D0B;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1570px) {
 
   .phone-icons {
     display: none;
